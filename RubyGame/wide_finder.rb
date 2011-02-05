@@ -3,7 +3,7 @@ class WideFinder
   attr_accessor :filename
   
   def initialize(filename)
-    @filename = File.open(filename, "r")
+    @filename = File.read(filename)
   end
 
   def results(how_many)
